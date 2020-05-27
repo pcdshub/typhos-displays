@@ -1,0 +1,674 @@
+<?xml version="1.0" ?>
+<ui version="4.0">
+  <class>Dialog</class>
+  <widget class="QWidget" name="screen">
+    <property name="geometry">
+      <rect>
+        <x>200</x>
+        <y>105</y>
+        <width>510</width>
+        <height>334</height>
+      </rect>
+    </property>
+    <property name="styleSheet">
+      <string notr="true">QWidget#screen {
+  color: rgb(0, 0, 0);
+  background-color: rgb(187, 187, 187);
+  }</string>
+    </property>
+    <property name="windowTitle">
+      <string>NDCircularBuffHelp</string>
+    </property>
+    <widget class="QLabel" name="text">
+      <property name="geometry">
+        <rect>
+          <x>10</x>
+          <y>5</y>
+          <width>480</width>
+          <height>25</height>
+        </rect>
+      </property>
+      <property name="text">
+        <string>Explanation of NDCircularBuff triggering</string>
+      </property>
+      <property name="font" stdset="0">
+        <font>
+          <pointsize>10</pointsize>
+        </font>
+      </property>
+      <property name="brush" stdset="0">
+        <brush brushstyle="SolidPattern">
+          <color alpha="255">
+            <red>10</red>
+            <green>0</green>
+            <blue>184</blue>
+          </color>
+        </brush>
+      </property>
+      <property name="toolTip">
+        <string>text</string>
+      </property>
+      <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="styleSheet">
+        <string notr="true">QLabel#text {
+  color: rgb(10, 0, 184);
+  }</string>
+      </property>
+    </widget>
+    <widget class="QLabel" name="text_1">
+      <property name="geometry">
+        <rect>
+          <x>5</x>
+          <y>35</y>
+          <width>430</width>
+          <height>20</height>
+        </rect>
+      </property>
+      <property name="text">
+        <string>Variables in trigger calculation expression</string>
+      </property>
+      <property name="font" stdset="0">
+        <font>
+          <pointsize>10</pointsize>
+        </font>
+      </property>
+      <property name="brush" stdset="0">
+        <brush brushstyle="SolidPattern">
+          <color alpha="255">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+          </color>
+        </brush>
+      </property>
+      <property name="toolTip">
+        <string>text_1</string>
+      </property>
+      <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="styleSheet">
+        <string notr="true">QLabel#text_1 {
+  color: rgb(0, 0, 0);
+  }</string>
+      </property>
+    </widget>
+    <widget class="QLabel" name="text_2">
+      <property name="geometry">
+        <rect>
+          <x>5</x>
+          <y>200</y>
+          <width>190</width>
+          <height>20</height>
+        </rect>
+      </property>
+      <property name="text">
+        <string>Example expressions</string>
+      </property>
+      <property name="font" stdset="0">
+        <font>
+          <pointsize>10</pointsize>
+        </font>
+      </property>
+      <property name="brush" stdset="0">
+        <brush brushstyle="SolidPattern">
+          <color alpha="255">
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+          </color>
+        </brush>
+      </property>
+      <property name="toolTip">
+        <string>text_2</string>
+      </property>
+      <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="styleSheet">
+        <string notr="true">QLabel#text_2 {
+  color: rgb(0, 0, 0);
+  }</string>
+      </property>
+    </widget>
+    <widget class="PyDMFrame" name="composite">
+      <property name="geometry">
+        <rect>
+          <x>20</x>
+          <y>60</y>
+          <width>322</width>
+          <height>128</height>
+        </rect>
+      </property>
+      <widget class="QLabel" name="text_3">
+        <property name="geometry">
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>322</width>
+            <height>14</height>
+          </rect>
+        </property>
+        <property name="text">
+          <string>A  The current value of the TriggerA attribute</string>
+        </property>
+        <property name="font" stdset="0">
+          <font>
+            <pointsize>8</pointsize>
+          </font>
+        </property>
+        <property name="brush" stdset="0">
+          <brush brushstyle="SolidPattern">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </brush>
+        </property>
+        <property name="toolTip">
+          <string>text_3</string>
+        </property>
+        <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="styleSheet">
+          <string notr="true">QLabel#text_3 {
+  color: rgb(0, 0, 0);
+  }</string>
+        </property>
+      </widget>
+      <widget class="QLabel" name="text_4">
+        <property name="geometry">
+          <rect>
+            <x>0</x>
+            <y>19</y>
+            <width>322</width>
+            <height>14</height>
+          </rect>
+        </property>
+        <property name="text">
+          <string>B  The current value of the TriggerB attribute</string>
+        </property>
+        <property name="font" stdset="0">
+          <font>
+            <pointsize>8</pointsize>
+          </font>
+        </property>
+        <property name="brush" stdset="0">
+          <brush brushstyle="SolidPattern">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </brush>
+        </property>
+        <property name="toolTip">
+          <string>text_4</string>
+        </property>
+        <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="styleSheet">
+          <string notr="true">QLabel#text_4 {
+  color: rgb(0, 0, 0);
+  }</string>
+        </property>
+      </widget>
+      <widget class="QLabel" name="text_5">
+        <property name="geometry">
+          <rect>
+            <x>0</x>
+            <y>38</y>
+            <width>245</width>
+            <height>14</height>
+          </rect>
+        </property>
+        <property name="text">
+          <string>C  The value of the PreCount record</string>
+        </property>
+        <property name="font" stdset="0">
+          <font>
+            <pointsize>8</pointsize>
+          </font>
+        </property>
+        <property name="brush" stdset="0">
+          <brush brushstyle="SolidPattern">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </brush>
+        </property>
+        <property name="toolTip">
+          <string>text_5</string>
+        </property>
+        <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="styleSheet">
+          <string notr="true">QLabel#text_5 {
+  color: rgb(0, 0, 0);
+  }</string>
+        </property>
+      </widget>
+      <widget class="QLabel" name="text_6">
+        <property name="geometry">
+          <rect>
+            <x>0</x>
+            <y>57</y>
+            <width>252</width>
+            <height>14</height>
+          </rect>
+        </property>
+        <property name="text">
+          <string>D  The value of the PostCount record</string>
+        </property>
+        <property name="font" stdset="0">
+          <font>
+            <pointsize>8</pointsize>
+          </font>
+        </property>
+        <property name="brush" stdset="0">
+          <brush brushstyle="SolidPattern">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </brush>
+        </property>
+        <property name="toolTip">
+          <string>text_6</string>
+        </property>
+        <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="styleSheet">
+          <string notr="true">QLabel#text_6 {
+  color: rgb(0, 0, 0);
+  }</string>
+        </property>
+      </widget>
+      <widget class="QLabel" name="text_7">
+        <property name="geometry">
+          <rect>
+            <x>0</x>
+            <y>76</y>
+            <width>287</width>
+            <height>14</height>
+          </rect>
+        </property>
+        <property name="text">
+          <string>E  The value of the CurrentQty_RBV record</string>
+        </property>
+        <property name="font" stdset="0">
+          <font>
+            <pointsize>8</pointsize>
+          </font>
+        </property>
+        <property name="brush" stdset="0">
+          <brush brushstyle="SolidPattern">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </brush>
+        </property>
+        <property name="toolTip">
+          <string>text_7</string>
+        </property>
+        <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="styleSheet">
+          <string notr="true">QLabel#text_7 {
+  color: rgb(0, 0, 0);
+  }</string>
+        </property>
+      </widget>
+      <widget class="QLabel" name="text_8">
+        <property name="geometry">
+          <rect>
+            <x>0</x>
+            <y>95</y>
+            <width>315</width>
+            <height>14</height>
+          </rect>
+        </property>
+        <property name="text">
+          <string>F  The value of the PostTriggerQty_RBV record</string>
+        </property>
+        <property name="font" stdset="0">
+          <font>
+            <pointsize>8</pointsize>
+          </font>
+        </property>
+        <property name="brush" stdset="0">
+          <brush brushstyle="SolidPattern">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </brush>
+        </property>
+        <property name="toolTip">
+          <string>text_8</string>
+        </property>
+        <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="styleSheet">
+          <string notr="true">QLabel#text_8 {
+  color: rgb(0, 0, 0);
+  }</string>
+        </property>
+      </widget>
+      <widget class="QLabel" name="text_9">
+        <property name="geometry">
+          <rect>
+            <x>0</x>
+            <y>114</y>
+            <width>266</width>
+            <height>14</height>
+          </rect>
+        </property>
+        <property name="text">
+          <string>G  The value of the Trigger_RBV record</string>
+        </property>
+        <property name="font" stdset="0">
+          <font>
+            <pointsize>8</pointsize>
+          </font>
+        </property>
+        <property name="brush" stdset="0">
+          <brush brushstyle="SolidPattern">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </brush>
+        </property>
+        <property name="toolTip">
+          <string>text_9</string>
+        </property>
+        <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="styleSheet">
+          <string notr="true">QLabel#text_9 {
+  color: rgb(0, 0, 0);
+  }</string>
+        </property>
+      </widget>
+    </widget>
+    <widget class="PyDMFrame" name="composite_1">
+      <property name="geometry">
+        <rect>
+          <x>24</x>
+          <y>225</y>
+          <width>282</width>
+          <height>14</height>
+        </rect>
+      </property>
+      <widget class="QLabel" name="text_10">
+        <property name="geometry">
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>35</width>
+            <height>14</height>
+          </rect>
+        </property>
+        <property name="text">
+          <string>A&lt;200</string>
+        </property>
+        <property name="font" stdset="0">
+          <font>
+            <pointsize>8</pointsize>
+          </font>
+        </property>
+        <property name="brush" stdset="0">
+          <brush brushstyle="SolidPattern">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </brush>
+        </property>
+        <property name="toolTip">
+          <string>text_10</string>
+        </property>
+        <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="styleSheet">
+          <string notr="true">QLabel#text_10 {
+  color: rgb(0, 0, 0);
+  }</string>
+        </property>
+      </widget>
+      <widget class="QLabel" name="text_11">
+        <property name="geometry">
+          <rect>
+            <x>149</x>
+            <y>0</y>
+            <width>133</width>
+            <height>14</height>
+          </rect>
+        </property>
+        <property name="text">
+          <string>A is less than 200.</string>
+        </property>
+        <property name="font" stdset="0">
+          <font>
+            <pointsize>8</pointsize>
+          </font>
+        </property>
+        <property name="brush" stdset="0">
+          <brush brushstyle="SolidPattern">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </brush>
+        </property>
+        <property name="toolTip">
+          <string>text_11</string>
+        </property>
+        <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="styleSheet">
+          <string notr="true">QLabel#text_11 {
+  color: rgb(0, 0, 0);
+  }</string>
+        </property>
+      </widget>
+    </widget>
+    <widget class="PyDMFrame" name="composite_2">
+      <property name="geometry">
+        <rect>
+          <x>20</x>
+          <y>250</y>
+          <width>482</width>
+          <height>52</height>
+        </rect>
+      </property>
+      <widget class="QLabel" name="text_12">
+        <property name="geometry">
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>140</width>
+            <height>14</height>
+          </rect>
+        </property>
+        <property name="text">
+          <string>A&gt;1.5*H &amp;&amp; E&gt;50;H:=A</string>
+        </property>
+        <property name="font" stdset="0">
+          <font>
+            <pointsize>8</pointsize>
+          </font>
+        </property>
+        <property name="brush" stdset="0">
+          <brush brushstyle="SolidPattern">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </brush>
+        </property>
+        <property name="toolTip">
+          <string>text_12</string>
+        </property>
+        <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="styleSheet">
+          <string notr="true">QLabel#text_12 {
+  color: rgb(0, 0, 0);
+  }</string>
+        </property>
+      </widget>
+      <widget class="QLabel" name="text_13">
+        <property name="geometry">
+          <rect>
+            <x>153</x>
+            <y>0</y>
+            <width>294</width>
+            <height>14</height>
+          </rect>
+        </property>
+        <property name="text">
+          <string>A is more than 150% of previous value of A</string>
+        </property>
+        <property name="font" stdset="0">
+          <font>
+            <pointsize>8</pointsize>
+          </font>
+        </property>
+        <property name="brush" stdset="0">
+          <brush brushstyle="SolidPattern">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </brush>
+        </property>
+        <property name="toolTip">
+          <string>text_13</string>
+        </property>
+        <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="styleSheet">
+          <string notr="true">QLabel#text_13 {
+  color: rgb(0, 0, 0);
+  }</string>
+        </property>
+      </widget>
+      <widget class="QLabel" name="text_14">
+        <property name="geometry">
+          <rect>
+            <x>153</x>
+            <y>19</y>
+            <width>329</width>
+            <height>14</height>
+          </rect>
+        </property>
+        <property name="text">
+          <string>and there are at least 50 images in the buffer.</string>
+        </property>
+        <property name="font" stdset="0">
+          <font>
+            <pointsize>8</pointsize>
+          </font>
+        </property>
+        <property name="brush" stdset="0">
+          <brush brushstyle="SolidPattern">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </brush>
+        </property>
+        <property name="toolTip">
+          <string>text_14</string>
+        </property>
+        <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="styleSheet">
+          <string notr="true">QLabel#text_14 {
+  color: rgb(0, 0, 0);
+  }</string>
+        </property>
+      </widget>
+      <widget class="QLabel" name="text_15">
+        <property name="geometry">
+          <rect>
+            <x>153</x>
+            <y>38</y>
+            <width>217</width>
+            <height>14</height>
+          </rect>
+        </property>
+        <property name="text">
+          <string>H is set to A after evaluation.</string>
+        </property>
+        <property name="font" stdset="0">
+          <font>
+            <pointsize>8</pointsize>
+          </font>
+        </property>
+        <property name="brush" stdset="0">
+          <brush brushstyle="SolidPattern">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </brush>
+        </property>
+        <property name="toolTip">
+          <string>text_15</string>
+        </property>
+        <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="styleSheet">
+          <string notr="true">QLabel#text_15 {
+  color: rgb(0, 0, 0);
+  }</string>
+        </property>
+      </widget>
+    </widget>
+  </widget>
+  <customwidgets>
+    <customwidget>
+      <class>PyDMLabel</class>
+      <extends>QLabel</extends>
+      <header>pydm.widgets.label</header>
+    </customwidget>
+    <customwidget>
+      <class>PyDMFrame</class>
+      <extends>QFrame</extends>
+      <header>pydm.widgets.frame</header>
+    </customwidget>
+  </customwidgets>
+</ui>
+

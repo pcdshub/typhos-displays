@@ -1,0 +1,260 @@
+<?xml version="1.0" ?>
+<ui version="4.0">
+  <class>Dialog</class>
+  <widget class="QWidget" name="screen">
+    <property name="geometry">
+      <rect>
+        <x>125</x>
+        <y>48</y>
+        <width>715</width>
+        <height>825</height>
+      </rect>
+    </property>
+    <property name="styleSheet">
+      <string notr="true">QWidget#screen {
+  color: rgb(0, 0, 0);
+  background-color: rgb(187, 187, 187);
+  }</string>
+    </property>
+    <property name="windowTitle">
+      <string>ADBase</string>
+    </property>
+    <widget class="PyDMFrame" name="composite">
+      <property name="geometry">
+        <rect>
+          <x>100</x>
+          <y>4</y>
+          <width>500</width>
+          <height>26</height>
+        </rect>
+      </property>
+      <widget class="PyDMDrawingRectangle" name="rectangle">
+        <property name="geometry">
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>500</width>
+            <height>25</height>
+          </rect>
+        </property>
+        <property name="brush" stdset="0">
+          <brush brushstyle="SolidPattern">
+            <color alpha="255">
+              <red>218</red>
+              <green>218</green>
+              <blue>218</blue>
+            </color>
+          </brush>
+        </property>
+        <property name="penStyle" stdset="0">
+          <enum>Qt::SolidLine</enum>
+        </property>
+        <property name="penColor" stdset="0">
+          <color>
+            <red>218</red>
+            <green>218</green>
+            <blue>218</blue>
+          </color>
+        </property>
+        <property name="penWidth" stdset="0">
+          <double>0</double>
+        </property>
+        <property name="penCapStyle" stdset="0">
+          <enum>Qt::FlatCap</enum>
+        </property>
+        <property name="toolTip">
+          <string>rectangle</string>
+        </property>
+      </widget>
+      <widget class="QLabel" name="text">
+        <property name="geometry">
+          <rect>
+            <x>58</x>
+            <y>1</y>
+            <width>384</width>
+            <height>25</height>
+          </rect>
+        </property>
+        <property name="text">
+          <string>Area Detector Control - ${prefix}</string>
+        </property>
+        <property name="font" stdset="0">
+          <font>
+            <pointsize>10</pointsize>
+          </font>
+        </property>
+        <property name="brush" stdset="0">
+          <brush brushstyle="SolidPattern">
+            <color alpha="255">
+              <red>10</red>
+              <green>0</green>
+              <blue>184</blue>
+            </color>
+          </brush>
+        </property>
+        <property name="toolTip">
+          <string>text</string>
+        </property>
+        <property name="alignment">
+          <set>Qt::AlignCenter</set>
+        </property>
+        <property name="styleSheet">
+          <string notr="true">QLabel#text {
+  color: rgb(10, 0, 184);
+  }</string>
+        </property>
+      </widget>
+    </widget>
+    <widget class="PyDMEmbeddedDisplay" name="composite_1">
+      <property name="geometry">
+        <rect>
+          <x>6</x>
+          <y>35</y>
+          <width>350</width>
+          <height>215</height>
+        </rect>
+      </property>
+      <property name="toolTip">
+        <string>composite_1</string>
+      </property>
+      <property name="filename" stdset="0">
+        <string>ADSetup_V21.ui</string>
+      </property>
+    </widget>
+    <widget class="PyDMEmbeddedDisplay" name="composite_2">
+      <property name="geometry">
+        <rect>
+          <x>360</x>
+          <y>35</y>
+          <width>350</width>
+          <height>165</height>
+        </rect>
+      </property>
+      <property name="toolTip">
+        <string>composite_2</string>
+      </property>
+      <property name="filename" stdset="0">
+        <string>ADShutter_V21.ui</string>
+      </property>
+    </widget>
+    <widget class="PyDMEmbeddedDisplay" name="composite_3">
+      <property name="geometry">
+        <rect>
+          <x>5</x>
+          <y>725</y>
+          <width>350</width>
+          <height>60</height>
+        </rect>
+      </property>
+      <property name="toolTip">
+        <string>composite_3</string>
+      </property>
+      <property name="filename" stdset="0">
+        <string>ADAttrFile_V21.ui</string>
+      </property>
+    </widget>
+    <widget class="PyDMEmbeddedDisplay" name="composite_4">
+      <property name="geometry">
+        <rect>
+          <x>360</x>
+          <y>755</y>
+          <width>350</width>
+          <height>60</height>
+        </rect>
+      </property>
+      <property name="toolTip">
+        <string>composite_4</string>
+      </property>
+      <property name="filename" stdset="0">
+        <string>ADDriverFile_V21.ui</string>
+      </property>
+    </widget>
+    <widget class="PyDMEmbeddedDisplay" name="composite_5">
+      <property name="geometry">
+        <rect>
+          <x>5</x>
+          <y>340</y>
+          <width>350</width>
+          <height>380</height>
+        </rect>
+      </property>
+      <property name="toolTip">
+        <string>composite_5</string>
+      </property>
+      <property name="filename" stdset="0">
+        <string>ADReadout_V21.ui</string>
+      </property>
+    </widget>
+    <widget class="PyDMEmbeddedDisplay" name="composite_6">
+      <property name="geometry">
+        <rect>
+          <x>360</x>
+          <y>205</y>
+          <width>350</width>
+          <height>405</height>
+        </rect>
+      </property>
+      <property name="toolTip">
+        <string>composite_6</string>
+      </property>
+      <property name="filename" stdset="0">
+        <string>ADCollect_V21.ui</string>
+      </property>
+    </widget>
+    <widget class="PyDMEmbeddedDisplay" name="composite_7">
+      <property name="geometry">
+        <rect>
+          <x>5</x>
+          <y>255</y>
+          <width>350</width>
+          <height>80</height>
+        </rect>
+      </property>
+      <property name="toolTip">
+        <string>composite_7</string>
+      </property>
+      <property name="filename" stdset="0">
+        <string>ADPlugins_V21.ui</string>
+      </property>
+    </widget>
+    <widget class="PyDMEmbeddedDisplay" name="composite_8">
+      <property name="geometry">
+        <rect>
+          <x>360</x>
+          <y>615</y>
+          <width>350</width>
+          <height>135</height>
+        </rect>
+      </property>
+      <property name="toolTip">
+        <string>composite_8</string>
+      </property>
+      <property name="filename" stdset="0">
+        <string>ADBuffers_V21.ui</string>
+      </property>
+    </widget>
+  </widget>
+  <customwidgets>
+    <customwidget>
+      <class>PyDMFrame</class>
+      <extends>QFrame</extends>
+      <header>pydm.widgets.frame</header>
+    </customwidget>
+    <customwidget>
+      <class>PyDMDrawingRectangle</class>
+      <extends>QWidget</extends>
+      <header>pydm.widgets.drawing</header>
+    </customwidget>
+    <customwidget>
+      <class>PyDMLabel</class>
+      <extends>QLabel</extends>
+      <header>pydm.widgets.label</header>
+    </customwidget>
+    <customwidget>
+      <class>PyDMEmbeddedDisplay</class>
+      <extends>QFrame</extends>
+      <header>pydm.widgets.embedded_display</header>
+    </customwidget>
+  </customwidgets>
+</ui>
+

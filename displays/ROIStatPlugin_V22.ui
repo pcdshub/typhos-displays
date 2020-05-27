@@ -1,0 +1,469 @@
+<?xml version="1.0" ?>
+<ui version="4.0">
+  <class>Dialog</class>
+  <widget class="QWidget" name="screen">
+    <property name="geometry">
+      <rect>
+        <x>482</x>
+        <y>109</y>
+        <width>390</width>
+        <height>685</height>
+      </rect>
+    </property>
+    <property name="styleSheet">
+      <string notr="true">QWidget#screen {
+  color: rgb(0, 0, 0);
+  background-color: rgb(187, 187, 187);
+  }</string>
+    </property>
+    <property name="windowTitle">
+      <string>NDROIStat</string>
+    </property>
+    <widget class="PyDMDrawingRectangle" name="rectangle">
+      <property name="geometry">
+        <rect>
+          <x>0</x>
+          <y>5</y>
+          <width>390</width>
+          <height>25</height>
+        </rect>
+      </property>
+      <property name="brush" stdset="0">
+        <brush brushstyle="SolidPattern">
+          <color alpha="255">
+            <red>218</red>
+            <green>218</green>
+            <blue>218</blue>
+          </color>
+        </brush>
+      </property>
+      <property name="penStyle" stdset="0">
+        <enum>Qt::SolidLine</enum>
+      </property>
+      <property name="penColor" stdset="0">
+        <color>
+          <red>218</red>
+          <green>218</green>
+          <blue>218</blue>
+        </color>
+      </property>
+      <property name="penWidth" stdset="0">
+        <double>0</double>
+      </property>
+      <property name="penCapStyle" stdset="0">
+        <enum>Qt::FlatCap</enum>
+      </property>
+      <property name="toolTip">
+        <string>rectangle</string>
+      </property>
+    </widget>
+    <widget class="QLabel" name="text">
+      <property name="geometry">
+        <rect>
+          <x>87</x>
+          <y>6</y>
+          <width>216</width>
+          <height>25</height>
+        </rect>
+      </property>
+      <property name="text">
+        <string>${prefix}</string>
+      </property>
+      <property name="font" stdset="0">
+        <font>
+          <pointsize>10</pointsize>
+        </font>
+      </property>
+      <property name="brush" stdset="0">
+        <brush brushstyle="SolidPattern">
+          <color alpha="255">
+            <red>10</red>
+            <green>0</green>
+            <blue>184</blue>
+          </color>
+        </brush>
+      </property>
+      <property name="toolTip">
+        <string>text</string>
+      </property>
+      <property name="alignment">
+        <set>Qt::AlignCenter</set>
+      </property>
+      <property name="styleSheet">
+        <string notr="true">QLabel#text {
+  color: rgb(10, 0, 184);
+  }</string>
+      </property>
+    </widget>
+    <widget class="PyDMEmbeddedDisplay" name="composite">
+      <property name="geometry">
+        <rect>
+          <x>5</x>
+          <y>35</y>
+          <width>380</width>
+          <height>530</height>
+        </rect>
+      </property>
+      <property name="toolTip">
+        <string>composite</string>
+      </property>
+      <property name="filename" stdset="0">
+        <string>PluginBase_V22.ui</string>
+      </property>
+    </widget>
+    <widget class="PyDMPushButton" name="message_button">
+      <property name="geometry">
+        <rect>
+          <x>172</x>
+          <y>660</y>
+          <width>100</width>
+          <height>20</height>
+        </rect>
+      </property>
+      <property name="text">
+        <string>Reset All</string>
+      </property>
+      <property name="font" stdset="0">
+        <font>
+          <pointsize>10</pointsize>
+        </font>
+      </property>
+      <property name="toolTip">
+        <string>${prefix}ResetAll</string>
+      </property>
+      <property name="channel" stdset="0">
+        <string>ca://${prefix}ResetAll</string>
+      </property>
+      <property name="pressValue" stdset="0">
+        <string>1</string>
+      </property>
+      <property name="styleSheet">
+        <string notr="true">PyDMPushButton#message_button {
+  color: rgb(0, 0, 0);
+  background-color: rgb(115, 223, 255);
+  }</string>
+      </property>
+    </widget>
+    <widget class="PyDMFrame" name="composite_1">
+      <property name="geometry">
+        <rect>
+          <x>5</x>
+          <y>570</y>
+          <width>380</width>
+          <height>85</height>
+        </rect>
+      </property>
+      <widget class="PyDMDrawingRectangle" name="rectangle_1">
+        <property name="geometry">
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>380</width>
+            <height>85</height>
+          </rect>
+        </property>
+        <property name="brush" stdset="0">
+          <brush brushstyle="NoBrush">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </brush>
+        </property>
+        <property name="penStyle" stdset="0">
+          <enum>Qt::SolidLine</enum>
+        </property>
+        <property name="penColor" stdset="0">
+          <color>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+          </color>
+        </property>
+        <property name="penWidth" stdset="0">
+          <double>1</double>
+        </property>
+        <property name="penCapStyle" stdset="0">
+          <enum>Qt::FlatCap</enum>
+        </property>
+        <property name="toolTip">
+          <string>rectangle_1</string>
+        </property>
+      </widget>
+      <widget class="PyDMRelatedDisplayButton" name="related_display">
+        <property name="geometry">
+          <rect>
+            <x>167</x>
+            <y>30</y>
+            <width>130</width>
+            <height>20</height>
+          </rect>
+        </property>
+        <property name="toolTip">
+          <string>Individual ROIs</string>
+        </property>
+        <property name="text">
+          <string>Individual ROIs</string>
+        </property>
+        <property name="showIcon" stdset="0">
+          <bool>true</bool>
+        </property>
+        <property name="font" stdset="0">
+          <font>
+            <pointsize>10</pointsize>
+          </font>
+        </property>
+        <property name="styleSheet">
+          <string notr="true">PyDMRelatedDisplayButton#related_display {
+  color: rgb(0, 0, 0);
+  background-color: rgb(115, 223, 255);
+  }</string>
+        </property>
+        <property name="titles" stdset="0">
+          <stringlist>
+            <string>ROI 0</string>
+            <string>ROI 1</string>
+            <string>ROI 2</string>
+            <string>ROI 3</string>
+            <string>ROI 4</string>
+            <string>ROI 5</string>
+            <string>ROI 6</string>
+            <string>ROI 7</string>
+          </stringlist>
+        </property>
+        <property name="filenames" stdset="0">
+          <stringlist>
+            <string>ROIStatN_V22.ui</string>
+            <string>ROIStatN_V22.ui</string>
+            <string>ROIStatN_V22.ui</string>
+            <string>ROIStatN_V22.ui</string>
+            <string>ROIStatN_V22.ui</string>
+            <string>ROIStatN_V22.ui</string>
+            <string>ROIStatN_V22.ui</string>
+            <string>ROIStatN_V22.ui</string>
+          </stringlist>
+        </property>
+        <property name="macros" stdset="0">
+          <stringlist>
+            <string>P=${P}, R=${R}1:</string>
+            <string>P=${P}, R=${R}2:</string>
+            <string>P=${P}, R=${R}3:</string>
+            <string>P=${P}, R=${R}4:</string>
+            <string>P=${P}, R=${R}5:</string>
+            <string>P=${P}, R=${R}6:</string>
+            <string>P=${P}, R=${R}7:</string>
+            <string>P=${P}, R=${R}8:</string>
+          </stringlist>
+        </property>
+        <property name="openInNewWindow" stdset="0">
+          <bool>true</bool>
+        </property>
+      </widget>
+      <widget class="QLabel" name="text_1">
+        <property name="geometry">
+          <rect>
+            <x>17</x>
+            <y>30</y>
+            <width>140</width>
+            <height>20</height>
+          </rect>
+        </property>
+        <property name="text">
+          <string>Individual 0-7</string>
+        </property>
+        <property name="font" stdset="0">
+          <font>
+            <pointsize>10</pointsize>
+          </font>
+        </property>
+        <property name="brush" stdset="0">
+          <brush brushstyle="SolidPattern">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </brush>
+        </property>
+        <property name="toolTip">
+          <string>text_1</string>
+        </property>
+        <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="styleSheet">
+          <string notr="true">QLabel#text_1 {
+  color: rgb(0, 0, 0);
+  }</string>
+        </property>
+      </widget>
+      <widget class="PyDMRelatedDisplayButton" name="related_display_1">
+        <property name="geometry">
+          <rect>
+            <x>167</x>
+            <y>57</y>
+            <width>130</width>
+            <height>20</height>
+          </rect>
+        </property>
+        <property name="toolTip">
+          <string>Combined ROIs</string>
+        </property>
+        <property name="text">
+          <string>Combined ROIs</string>
+        </property>
+        <property name="showIcon" stdset="0">
+          <bool>true</bool>
+        </property>
+        <property name="font" stdset="0">
+          <font>
+            <pointsize>10</pointsize>
+          </font>
+        </property>
+        <property name="styleSheet">
+          <string notr="true">PyDMRelatedDisplayButton#related_display_1 {
+  color: rgb(0, 0, 0);
+  background-color: rgb(115, 223, 255);
+  }</string>
+        </property>
+        <property name="titles" stdset="0">
+          <stringlist>
+            <string>ROIS 1-8</string>
+            <string>ROIS 9-16</string>
+            <string>ROIS 17-24</string>
+            <string>ROIS 25-32</string>
+          </stringlist>
+        </property>
+        <property name="filenames" stdset="0">
+          <stringlist>
+            <string>ROIStat8_V22.ui</string>
+            <string>ROIStat8_V22.ui</string>
+            <string>ROIStat8_V22.ui</string>
+            <string>ROIStat8_V22.ui</string>
+          </stringlist>
+        </property>
+        <property name="macros" stdset="0">
+          <stringlist>
+            <string>P=${P},ROI1=${R}1:,ROI2=${R}2:,ROI3=${R}3:,ROI4=${R}4:,ROI5=${R}5:,ROI6=${R}6:,ROI7=${R}7:,ROI8=${R}8:</string>
+            <string>P=${P},ROI1=${R}8:,ROI2=${R}9:,ROI3=${R}10:,ROI4=${R}11:,ROI5=${R}12:,ROI6=${R}13:,ROI7=${R}14:,ROI8=${R}15:,</string>
+            <string>P=${P},ROI1=${R}16:,ROI2=${R}17:,ROI3=${R}18:,ROI4=${R}19:,ROI5=${R}20:,ROI6=${R}21:,ROI7=${R}22:,ROI8=${R}23:,</string>
+            <string>P=${P},ROI1=${R}24:,ROI2=${R}25:,ROI3=${R}26:,ROI4=${R}27:,ROI5=${R}28:,ROI6=${R}29:,ROI7=${R}30:,ROI8=${R}31:,</string>
+          </stringlist>
+        </property>
+        <property name="openInNewWindow" stdset="0">
+          <bool>true</bool>
+        </property>
+      </widget>
+      <widget class="QLabel" name="text_2">
+        <property name="geometry">
+          <rect>
+            <x>133</x>
+            <y>5</y>
+            <width>150</width>
+            <height>20</height>
+          </rect>
+        </property>
+        <property name="text">
+          <string>ROI definitions</string>
+        </property>
+        <property name="font" stdset="0">
+          <font>
+            <pointsize>10</pointsize>
+          </font>
+        </property>
+        <property name="brush" stdset="0">
+          <brush brushstyle="SolidPattern">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </brush>
+        </property>
+        <property name="toolTip">
+          <string>text_2</string>
+        </property>
+        <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="styleSheet">
+          <string notr="true">QLabel#text_2 {
+  color: rgb(0, 0, 0);
+  }</string>
+        </property>
+      </widget>
+      <widget class="QLabel" name="text_3">
+        <property name="geometry">
+          <rect>
+            <x>77</x>
+            <y>58</y>
+            <width>80</width>
+            <height>20</height>
+          </rect>
+        </property>
+        <property name="text">
+          <string>Combined</string>
+        </property>
+        <property name="font" stdset="0">
+          <font>
+            <pointsize>10</pointsize>
+          </font>
+        </property>
+        <property name="brush" stdset="0">
+          <brush brushstyle="SolidPattern">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </brush>
+        </property>
+        <property name="toolTip">
+          <string>text_3</string>
+        </property>
+        <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="styleSheet">
+          <string notr="true">QLabel#text_3 {
+  color: rgb(0, 0, 0);
+  }</string>
+        </property>
+      </widget>
+    </widget>
+  </widget>
+  <customwidgets>
+    <customwidget>
+      <class>PyDMDrawingRectangle</class>
+      <extends>QWidget</extends>
+      <header>pydm.widgets.drawing</header>
+    </customwidget>
+    <customwidget>
+      <class>PyDMLabel</class>
+      <extends>QLabel</extends>
+      <header>pydm.widgets.label</header>
+    </customwidget>
+    <customwidget>
+      <class>PyDMEmbeddedDisplay</class>
+      <extends>QFrame</extends>
+      <header>pydm.widgets.embedded_display</header>
+    </customwidget>
+    <customwidget>
+      <class>PyDMPushButton</class>
+      <extends>QPushButton</extends>
+      <header>pydm.widgets.pushbutton</header>
+    </customwidget>
+    <customwidget>
+      <class>PyDMFrame</class>
+      <extends>QFrame</extends>
+      <header>pydm.widgets.frame</header>
+    </customwidget>
+    <customwidget>
+      <class>PyDMRelatedDisplayButton</class>
+      <extends>QPushButton</extends>
+      <header>pydm.widgets.related_display_button</header>
+    </customwidget>
+  </customwidgets>
+</ui>
+
